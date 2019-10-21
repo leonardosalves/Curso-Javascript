@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+         //Aprenderemos if e também switch
+         //if
+         function retornaSexo(sexo){
+             /*Obs: Quando é colocado '==' ele verifica somente o valor das variáveis, se for '===' irá verificar o valor e também o tipo*/
+             //M, F
+             if(sexo === 'M'){
+                 return 'Masculino';
+             }else if(sexo === 'F'){
+                 return 'Feminino';
+             }else{
+                 return 'Só existe Masculino e Feminino... nem vem que não tem.';
+             }
+
+         }
+
+         //switch
+         function retornaSexo(sexo){
+             //M, F
+             switch (sexo) {
+                 case 'M':
+                     return 'Masculino';
+                     break;
+                 case 'F':
+                     return 'Feminino';
+                     break;
+                 default:
+                     return 'Só existe Masculino e Feminino... nem vem que não tem.';
+                     break;
+             }
+
+         }
+
+
+         var resultado = retornaSexo('M');
+
+         console.log(resultado);
+        </script>
+    </body>
+</html>
